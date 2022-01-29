@@ -8,6 +8,15 @@
 	<script type="text/javascript" src="colorTable.js"></script>
 </head>
 <body>
+	<div id="instructions">
+		Instructions:
+		<ol>
+			<li>Either click the "Choose Files" button or drag and drop the files in from an explorer window.</li>
+			<li>Navigate to your minecraft save folder, e.g. <code>C:\Users\[USER]\AppData\Roaming\.minecraft\saves\[WORLD]</code> .</li>
+			<li>Go to the <code>data</code> folder inside the save folder.</li>
+			<li>Select whichever <code>map_#.dat</code> files you wish to view.</li>
+		</ol>
+	</div>
 	<input type="file" id="fileSelect" accept=".nbt, .dat" multiple/>
 	<input type="button" id="mapLeft" value="←"/>
 	<input type="button" id="mapRight" value="→"/>
