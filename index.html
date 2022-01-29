@@ -4,10 +4,12 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="pako.min.js"></script>
 	<script type="text/javascript" src="nbtParser.js"></script>
-	<script type="text/javascript" src="read_nbt.js"></script>
+	<script type="text/javascript" src="processing.js"></script>
 	<script type="text/javascript" src="colorTable.js"></script>
 </head>
+
 <body>
+
 	<div id="instructions">
 		Instructions:
 		<ol>
@@ -18,10 +20,28 @@
 			<li>Use arrow buttons to navigate through multiple files.</li>
 		</ol>
 	</div>
-	<input type="file" id="fileSelect" accept=".nbt, .dat" multiple/>
-	<input type="button" id="mapLeft" value="←"/>
-	<input type="button" id="mapRight" value="→"/>
-	<div>Map: <span id="currentMap">0</span>/<span id="totalMaps">0</span></div>
+
+	<form>
+		<input type="file" id="fileSelect" accept=".nbt, .dat" multiple/>
+		<input type="button" id="mapPrev" value="←"/>
+		<input type="button" id="mapNext" value="→"/>
+		</span><span id="mapIndex" class="mapData">0</span>/<span id="totalMaps" class="dataLabel">0</span></div>
+		<input type="button" id="zoomIn" value="🔍+"/>
+		<input type="button" id="zoomOut" value="🔍-"/>
+	</form>
+
+	<div id="dataBox">
+		<span class="dataLabel">Map: </span>
+			<span id="currentMap" class="mapData">None</span>
+		<span class="dataLabel">Dimension: </span>
+			<span id="dimensionText" class="mapData">None</span>
+		<span class="dataLabel">Scale: </span>
+			<span id="mapItemScaleText" class="mapData">None</span>
+		<span class="dataLabel">xCenter: </span>
+			<span id="xCenterText" class="mapData">None</span>
+		<span class="dataLabel">zCenter: </span>
+			<span id="zCenterText" class="mapData">None</span>
+	</div>
 	<br/>
 	<canvas id="mapCanvas">Map Canvas</canvas>
 </body>

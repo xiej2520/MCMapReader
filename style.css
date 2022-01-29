@@ -1,6 +1,7 @@
 body {
 	background-color: #333;
 	color: #FFF;
+	line-height: 1.25em;
 }
 
 code {
@@ -8,11 +9,70 @@ code {
 	border: 1px solid #FFF;
 	border-radius: 4px;
 	color: #FFF;
-	padding: 3pt;
+	padding: 3px;
 	margin: 5px;
+}
+
+form {
+	background-color: #559;
+	border-radius: 4px;
+	color: #FFF;
+	padding: 8px;
+	margin: 2px;
+
 }
 
 canvas {
 	border: 1px solid white;
 	background-image: url("transparentBackground.png");
+}
+
+.dataLabel {
+	background-color: #77B;
+	border-radius: 4px;
+  border-left: 6px solid #44C;
+	padding: 2px;
+	margin: 2px;
+	line-height: 1.25em;
+	display: inline-block;
+	min-width: 80px;
+}
+
+.mapData {
+	background-color: #7B7;
+	border-radius: 4px;
+  border-right: 6px solid #4A4;
+	color: #FFF;
+	padding: 2px;
+	margin: 2px;
+	line-height: 1.25em;
+	display: inline-block;
+	min-width: 40px;
+}
+
+#instructions {
+	background-color: #595;
+	border-radius: 4px;
+	color: #FFF;
+	padding: 16px;
+	margin: 2px;
+	line-height: 1.25em;
+}
+
+#totalMaps {
+	min-width: 40px;
+}
+
+#dataBox {
+	background-color: #CCC;
+	border-radius: 4px;
+	color: #FFF;
+	padding: 4px;
+	margin: 2px;
+	line-height: 1.25em;
+
+}
+
+#currentMap {
+	min-width: 100px;
 }
