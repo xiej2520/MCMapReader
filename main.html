@@ -8,7 +8,10 @@
 	<script type="text/javascript" src="colorTable.js"></script>
 </head>
 <body>
-	<input type="file" id="fileSelect" accept=".nbt, .dat">
+	<input type="file" id="fileSelect" accept=".nbt, .dat" multiple/>
+	<input type="button" id="mapLeft" value="←"/>
+	<input type="button" id="mapRight" value="→"/>
+	<div>Map: <span id="currentMap">0</span>/<span id="totalMaps">0</span></div>
 	<br/>
 	<canvas id="mapCanvas">Map Canvas</canvas>
 </body>
