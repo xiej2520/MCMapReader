@@ -1,0 +1,41 @@
+{
+  "name": "mcmapreader",
+  "description": "Javascript-only in-browser tool to view minecraft maps (The \"map\" item ingame).",
+  "version": "1.0.0",
+  "author": "Jacky Xie",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/xiej2520/MCMapReader/issues"
+  },
+  "homepage": "https://github.com/xiej2520/MCMapReader#readme",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron ./app",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiej2520/MCMapReader.git"
+  },
+  "electron-builder": {
+    "appId": "MCMapReader",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "pacman",
+        "apk"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13"
+  }
+}

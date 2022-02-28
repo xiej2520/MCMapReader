@@ -2,3 +2,5 @@ maps
 nbt test
 note.txt
 map2png.php
+node_modules
+dist
